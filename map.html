@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Covid-19 Tracker</title>
+        <link type="text/css" rel="stylesheet" href="style/style.css"/>
+        <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="icon/favicon.ico">
+    </head>
+    
+    <body>
+        <div class="pop-up">
+            <div class="search-container">
+                <div class="search">
+                    <input id="country-input" type="text" placeholder="Enter Country's ISO3 In CAPS..."/>
+                    <i onclick="searchCountries()" id="search-icon" class="fas fa-search"></i>
+                </div>
+            </div>
+
+            <div class="stores-list-container">
+                <div class="stores-list">
+                </div>
+            </div>
+        </div>
+        <span><i class="menu fas fa-bars"></i><i class="close fas fa-times"></i></span>
+        <div id="map"></div>
+
+        <script src="js/index.js"></script>
+        <script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDyqlCInNaahnf2jeH9rB1ztjWt8tBRbuU&callback=initMap'></script>
+    </body>
+</html>
